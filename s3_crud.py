@@ -24,8 +24,8 @@ if bucket_name not in all_my_buckets:
 else:
     print(f"{bucket_name} bucket already exists. no need to createa new one. ")
 #create 'file_1' and 'file_2'
-file_1='file_1.txt'
-file_2='file_2.txt'
+file_1='data/file_1.txt'
+file_2='data/file_2.txt'
 
 #upload file_1 and file_2
 s3.Bucket(bucket_name).upload_file(Filename=file_1, Key=file_1)
